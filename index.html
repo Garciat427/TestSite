@@ -1,67 +1,112 @@
 <!doctype html>
+
 <html lang="en">
-   <head>
+  <head>
+      <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-      <title>Ilan's Test</title>
-   </head>
-   <body>
-
-   <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="results">
-
-                </div>
+      <!-- CSS Links-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/initial-page/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Abel|Roboto|Fredoka+One&display=swap" rel="stylesheet">
+      <!-- CSS Links-->       
+      <title>Travel-Ten</title>
+  </head>
+    
+  <body>
+    <!-- Dynamic Header -->
+    <div class="mainHeader">
+        <nav class="navbar  sticky-top headerBox">
+            <div class="container">
+          <img src="assets/initial-page/images/BannerImages/EditedImages/Logo.png" class="ml-5" height="40" alt="">
+          <h1 class="bubble">Travel Made Simple.</h1>
+          </div>
+        </nav>
+      <div id="dynamicHeader">
+       
+        <div id="carouselExampleFade" data-interval="2000" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/ChesterHill.png" class="d-block w-100 imgHeader" alt="Chester Hill">
             </div>
-         </div>
-   </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/Thai.png" class="d-block w-100 " alt="Chicago Bridges">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/ChicagoLovePark.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/ChocolateChipDonut.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/ChicagoBridges.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/Burger.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/Wings.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/initial-page/images/BannerImages/EditedImages/PoisonPier.png" class="d-block w-100 " alt="Chicago Love Park">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Body Content -->
+      <div class="container">
+        <!-- City Search Bar -->  
+        <div class="row"> 
+          <div class="col-lg-1"></div> 
+          <div class="col-lg-10">
+            <div class="form-group">
+              <label class="site-labels mt-5" for="city-input">Enter your city</label>
+              <input type="text" id="city-search" class="form-control city-input" placeholder="Toronto - San Francisco - New York - Chicago - Calgary - Ottawa - Vancouver" aria-label="Username" aria-describedby="basic-addon1" onfocus= "this.placeholder = ''">
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      
+        
+        <div class="row mt-5">
+          <div class="col-lg-12 text-center">
+            <h3 class="cardLbl">Choose a List</h3>
+          </div>
+        </div>
+      <div class="row pt-1">
+        <div class="col-lg-4 text-center mt-2 cardDiv" id="eatDiv">
+          <img class="selCard rounded mx-auto d-block pt-2" src="assets/initial-page/images/Card Images/EatsCard.png" data = "eat">
+          <div class="overlay">
+            <h3>Eats</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mt-2 cardDiv pt-2" id="sleepDiv">
+          <img class="selCard rounded mx-auto d-block" src="assets/initial-page/images/Card Images/SleepCard.png" data = "sleep">
+          <div class="overlay">
+            <h3>Sleeps</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mt-2 cardDiv" id="visitDiv">
+          <img class="selCard rounded mx-auto d-block pt-2" src="assets/initial-page/images/Card Images/VisitCard.png" data = "visit">
+          <div class="overlay">
+            <h3>Visits</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-      <script>
-         var myurl = "https://api.yelp.com/v3/businesses/search?term=Food&location=Toronto";
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <div class="container">
+      </div>
+    </nav>
 
-         $.ajax({
-            url: myurl,
-            headers: {
-             'Authorization':'Bearer TX_Msat5ZgN55sxNe0gri6yNsfxnx_1UeIdyPfvvGy-6YIrE2Vo3hxcwPln6qhrhYjnxfkp8fQ42PN6_STVLMVzZ_YM2a3CLUhhplGHuTS6YFF4BiBm3QHkaYyElXXYx',
-         },
-            method: 'GET',
-            dataType: 'json',
-            success: function(data){
-               console.log(data);
-                // Grab the results from the API JSON return
-                var totalresults = data.total;
-                // If our results are greater than 0, continue
-                if (totalresults > 0){
-                    // Display a header on the page with the number of results
-                    $('#results').append('<h5>We discovered ' + totalresults + ' results!</h5>');
-                    // Itirate through the JSON array of 'businesses' which was returned by the API
-                    $.each(data.businesses, function(i, item) {
-                        // Store each business's object in a variable
-                        var id = item.id;
-                        var alias = item.alias;
-                        var phone = item.display_phone;
-                        var image = item.image_url;
-                        var name = item.name;
-                        var rating = item.rating;
-                        var reviewcount = item.review_count;
-                        var address = item.location.address1;
-                        var city = item.location.city;
-                        var state = item.location.state;
-                        var zipcode = item.location.zip_code;
-                        // Append our result into our page
-                        $('#results').append('<div id="' + id + '" style="margin-top:50px;margin-bottom:50px;"><img src="' + image + '" style="width:200px;height:150px;"><br>We found <b>' + name + '</b> (' + alias + ')<br>Business ID: ' + id + '<br> Located at: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>The phone number for this business is: ' + phone + '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
-                  });
-                } else {
-                    // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found
-                    $('#results').append('<h5>We discovered no results!</h5>');
-                }
-            }
-         });      
-
-      </script>
-   </body>
+        <!-- Javascript Files -->
+        
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/initial-page/javascript/script.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHgz_wG-Dmq9lS70RvyrgVnFdSiNh2m6c&libraries=places&callback=activatePlacesSearch"></script>
+    </body>
 </html>
