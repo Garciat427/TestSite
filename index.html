@@ -24,6 +24,7 @@
       </div>
     </nav>
     
+    
     <!-- Initial Page -->
     <div id="initialPage">
       <!-- Dynamic starting Header -->  
@@ -120,11 +121,11 @@
       <div class="row">
         <div class="col-lg-2"></div><!-- Spacer -->  
         <div class="col-lg-3">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">List A</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="btnList1">List A</button>
         </div>
         <div class="col-lg-2"></div><!-- Spacer -->
         <div class="col-lg-3">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">List B</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="btnList2">List B</button>
         </div>
         <div class="col-lg-2"></div><!-- Spacer -->
       </div>
@@ -139,17 +140,17 @@
               <!-- List Header -->
               <div class="row mb-5">
                 <div class="col-lg-12">
-                  <h1 class="resultsHeader">List 1</h1>
+                  <h1 class="resultsHeader" id="listTitle">List 1</h1>
                 </div>
               </div>
 
               <!-- Results Section -->
-              <div class="row mt-5 " style="height: auto;">
+              <div class="row mt-5 " style="height: auto;" id="results">
                 <!-- Results Left -->
-                <div class="col-lg-3  card border-dark bg-dark " id="results-left"><!-- Info Cards will be dynamically created here --></div>
+                <div class="col-lg-3  card border-dark bg-dark resultsCard" id="results-left"><!-- Info Cards will be dynamically created here --></div>
 
                 <!-- Map Section-->             
-                <div class="col-lg-6 card border-dark bg-dark" id="results-center">
+                <div class="col-lg-6 card border-dark bg-dark resultsCard" id="results-center">
                     <div id="map" style="width: 100%; height: 100%;"></div>
                 </div>
 
