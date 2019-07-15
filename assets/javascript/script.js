@@ -236,5 +236,5 @@ function startLists() {
     //Any api function calls below
     getFoodAjaxCall(); 
     getVisitAjaxCall(); 
-    // getHotelAjaxCall();
+    getHotelAjaxCall();
 }
