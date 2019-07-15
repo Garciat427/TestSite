@@ -59,7 +59,7 @@ function getVisitAjaxCall() {
             }
 
             // push to the global visitList array
-            visitList.push(JSON.stringify(visitPlace));
+            visitList.push(visitPlace);
         }
         return visitList;
     });
